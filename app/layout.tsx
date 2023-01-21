@@ -1,4 +1,8 @@
-import './globals.css'
+// This file applies to every root in the application
+
+import Navigation from './navbar';
+import Footer from './footer';
+import styles from './global.module.css';
 
 export default function RootLayout({
   children,
@@ -6,13 +10,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+    <html className={styles.html}>
+      <body className={styles.body}>
+        <Navigation />
+        {children}
+        <Footer></Footer>
+      </body>
     </html>
   )
 }
