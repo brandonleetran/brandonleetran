@@ -1,33 +1,19 @@
 "use client"
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import styles from './global.module.css';
 
 export default () => (
-  <NavigationMenu.Root>
-    <NavigationMenu.List>
+  <NavigationMenu.Root className={styles.NavigationRoot}>
+    <NavigationMenu.List className={styles.NavigationMenuList}>
       <NavigationMenu.Item>
-        <NavigationMenu.Trigger />
-        <NavigationMenu.Content>
-          <NavigationMenu.Link />
-        </NavigationMenu.Content>
+        <NavigationMenu.Link className="NavigationMenuLink" href="/">Home</NavigationMenu.Link>
       </NavigationMenu.Item>
-
       <NavigationMenu.Item>
-        <NavigationMenu.Link />
+        <NavigationMenu.Link className="NavigationMenuLink" href="/blog">Blog</NavigationMenu.Link>
       </NavigationMenu.Item>
-
       <NavigationMenu.Item>
-        <NavigationMenu.Trigger />
-        <NavigationMenu.Content>
-          <NavigationMenu.Sub>
-            <NavigationMenu.List />
-            <NavigationMenu.Viewport />
-          </NavigationMenu.Sub>
-        </NavigationMenu.Content>
+        <NavigationMenu.Link className="NavigationMenuLink" href="/snippets">Snippets</NavigationMenu.Link>
       </NavigationMenu.Item>
-
-      <NavigationMenu.Indicator />
     </NavigationMenu.List>
-
-    <NavigationMenu.Viewport />
   </NavigationMenu.Root>
 );
