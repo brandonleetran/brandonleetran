@@ -4,7 +4,13 @@
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(17, 17, 17);
+}
+
+.main {
+    max-width: 42rem;
+    margin: 0 auto;
+    background-color: white;
 }
 
 .NavigationRoot {
@@ -13,4 +19,6 @@
 
 .NavigationMenuList {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }

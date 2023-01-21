@@ -10,10 +10,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className={styles.html}>
-      <body className={styles.body}>
-        <Navbar />
-        {children}
+    <html>
+      <body>
+        <main>
+          {children}
+        </main>
         <Footer/>
       </body>
     </html>
