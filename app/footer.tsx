@@ -1,5 +1,5 @@
 export default function Footer() {
     return(
-        <footer>This is the footer</footer>
+        <footer className="max-w-2xl m-auto">This is the footer</footer>
     )
 }

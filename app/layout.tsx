@@ -10,9 +10,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body>
-        <main>
+    <html className="text-3x h-screen">
+      <body className="text-white bg-neutral-900 h-screen w-full fixed">
+        <Navbar/>
+        <main className="max-w-2xl m-auto">
           {children}
         </main>
         <Footer/>
