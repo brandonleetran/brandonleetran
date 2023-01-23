@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Navigation = () => {
     return (
-      <nav className="backdrop-blur-3xl bg-transparent w-full z-10 top-0 sticky">
+      <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky sm:pb-5 sm:pt-5" >
         <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-center mt-0 py-2">
   
           <div className="block lg:hidden pr-4">
@@ -14,22 +14,22 @@ const Navigation = () => {
           <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
           <ul className="text-sm font-normal list-reset lg:flex flex-1 items-center text-left">
               <li className="mr-3">
-                <Link className="inline-block py-2 px-4 text-black no-underline hover:rounded-md hover:bg-stone-200 transition-all duration-300" href="/">
+                <Link className="inline-block py-2 px-4 text-black no-underline hover:rounded-md hover:bg-black/[.05] transition-all duration-300" href="/">
                   Home
                 </Link>
               </li>
               <li className="mr-3">
-              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/blog">
+              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-black/[.05] hover:rounded-md transition-all duration-300" href="/blog">
                   Blog
                 </Link>
               </li>
               <li className="mr-3">
-              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/snippets">
+              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-black/[.05] hover:rounded-md transition-all duration-300" href="/snippets">
                   Code Snippets
                 </Link>
               </li>
               <li className="mr-3">
-                <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/contact">
+                <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-black/[.05] hover:rounded-md transition-all duration-300" href="/contact">
                   Contact
                 </Link>
               </li>

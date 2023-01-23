@@ -13,10 +13,9 @@ export default function RootLayout({
     <html className="text-3x h-screen overflow-auto">
       <body className="text-black bg-white h-screen w-full overflow-auto">
         <Navigation/>
-        <main className="max-w-2xl m-auto px-4">
+        <main className="max-w-2xl m-auto px-4 pt-10">
           {children}
         </main>
-        <Footer/>
       </body>
     </html>
   )
