@@ -1,6 +1,6 @@
 // This file applies to every root in the application
 
-import Navbar from './navbar';
+import Navigation from './navbar';
 import Footer from './footer';
 import './globals.css';
 
@@ -10,9 +10,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="text-3x h-screen">
-      <body className="text-white bg-neutral-900 h-screen w-full fixed">
-        <Navbar/>
+    <html className="text-3x h-screen overflow-auto">
+      <body className="text-black bg-white h-screen w-full overflow-auto">
+        <Navigation/>
         <main className="max-w-2xl m-auto">
           {children}
         </main>
