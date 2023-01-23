@@ -12,24 +12,24 @@ const Navigation = () => {
           </div>
   
           <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
-          <ul className="list-reset lg:flex flex-1 items-center text-left">
+          <ul className="text-sm font-normal list-reset lg:flex flex-1 items-center text-left">
               <li className="mr-3">
-                <Link className="inline-block py-2 pr-4 text-black font-medium no-underline hover:bg-sky-700" href="/">
+                <Link className="inline-block py-2 px-4 text-black no-underline hover:rounded-md hover:bg-stone-200 transition-all duration-300" href="/">
                   Home
                 </Link>
               </li>
               <li className="mr-3">
-              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-sky-700" href="/blog">
+              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/blog">
                   Blog
                 </Link>
               </li>
               <li className="mr-3">
-              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-sky-700 " href="/snippets">
+              <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/snippets">
                   Code Snippets
                 </Link>
               </li>
               <li className="mr-3">
-                <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-sky-700" href="/contact">
+                <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-stone-200 hover:rounded-md transition-all duration-300" href="/contact">
                   Contact
                 </Link>
               </li>
