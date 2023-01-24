@@ -20,7 +20,7 @@ const Navigation = () => {
               </li>
               <li className="mr-3">
                 <Link className="link-item inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4 hover:bg-black/[.05] hover:rounded-md transition-all duration-300" href="/contact">
-                  Projects
+                  Skills
                 </Link>
               </li>
               <li className="mr-3">
