@@ -6,13 +6,13 @@ import Logo from './logo'
 export default function Page() {
   return (
     <>
-      <div className="flex pb-10 bg-gradient-to-r from-rose-400 via-fuchsia-500 from-indigo-500 bg-[length:100%_2px] bg-no-repeat bg-bottom">
+      <div className="flex flex-col-reverse md:flex-row pb-10 bg-gradient-to-r from-rose-400 via-fuchsia-500 from-indigo-500 bg-[length:100%_2px] bg-no-repeat bg-bottom">
         <div className="pr-1 max-w-md">
-          <h1 className="font-bold text-4xl text-gray-700">Brandon Lee Tran</h1>
-          <p className="text-sm pt-3">Software Developer</p>
-          <p className="pt-4 text-sm text-zinc-700">Welcome, I am a Software Developer based in Omaha, NE with a passion for full-stack development. I enjoy learning new technologies and gaming on the side. This site is currently under development. Please stay tuned for more ongoing changes.</p>
+          <h1 className="font-bold md:text-4xl mt-3 md:mt-0 text-gray-700">Brandon Lee Tran</h1>
+          <p className="text-xs md:text-sm md:pt-3">Software Developer</p>
+          <p className="mt-2 md:mt-4 text-sm text-zinc-700">Welcome, I am a Software Developer based in Omaha, NE with a passion for full-stack development. I enjoy learning new technologies and gaming on the side. This site is currently under development. Please stay tuned for more ongoing changes.</p>
         </div>
-        <div className="ml-auto">
+        <div className="md:ml-auto ml-0">
           <Image width="150" height="150" className="rounded-full" src="/brandon_tran.jpg" alt="Brandon Lee Tran" />
         </div>
       </div>
@@ -35,6 +35,16 @@ export default function Page() {
         </div>
       </div>
       <div>
+        <h3 className="font-bold text-2xl text-gray-700 mt-10">Qualifications</h3>
+        <p className="mt-5 text-sm">In Development</p>
+      </div>
+      <div>
+        <h3 className="font-bold text-2xl text-gray-700 mt-10">Blog</h3>
+        <p className="mt-5 text-sm">In Development</p>
+      </div>
+      <div>
+        <h3 className="font-bold text-2xl text-gray-700 mt-10">Get In Touch</h3>
+        <p className="mt-5 text-sm">In Development</p>
       </div>
     </>
   );

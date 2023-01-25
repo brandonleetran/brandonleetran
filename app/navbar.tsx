@@ -3,10 +3,10 @@ import Link from 'next/link'
 const Navigation = () => {
     return (
       <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky sm:pb-5 sm:pt-5" >
-        <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-center mt-0 py-2">
+        <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-end md:justify-center mt-0 py-2">
   
-          <div className="block lg:hidden pr-4">
-            <button id="nav-toggle" className="flex items-center p-1 text-black hover:text-gray-900">
+          <div className="block sm:hidden pr-4">
+            <button id="nav-toggle" className="flex justify-end md:items-center p-1 text-black hover:text-gray-900">
               <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
           </div>
