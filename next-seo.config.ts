@@ -10,7 +10,7 @@ export const NEXT_SEO_DEFAULT: NextSeoProps = {
     description: 'Welcome, I am a Software Developer based in Omaha, NE with a passion for full-stack development. I enjoy learning new technologies and gaming on the side.',
     images: [
       {
-        url: 'https://brandonleetran.com/brandon_tran.jpg',
+        url: '/brandon_tran.jpg',
         alt: 'Brandon Lee Tran',
         width: 150,
         height: 150,
