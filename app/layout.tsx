@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html className="text-3x h-screen overflow-auto">
+    <html lang="en" className="text-3x h-screen overflow-auto">
       <body className="text-black bg-white h-screen w-full overflow-auto">
         <Navigation/>
         <main className="max-w-2xl m-auto px-4 pt-10">

@@ -17,7 +17,7 @@ export default function Page() {
         </div>
       </div>
       <div>
-        <h3 className="font-bold text-2xl text-gray-700 mt-10">Skills</h3>
+        <h2 className="font-bold text-2xl text-gray-700 mt-10">Skills</h2>
         <div className="mt-5 flex-wrap flex gap-y-2.5	gap-x-5">
           <Logo path="/logos/html.png" />
           <Logo path="/logos/css-3.png" />
@@ -35,15 +35,15 @@ export default function Page() {
         </div>
       </div>
       <div>
-        <h3 className="font-bold text-2xl text-gray-700 mt-10">Qualifications</h3>
+        <h2 className="font-bold text-2xl text-gray-700 mt-10">Qualifications</h2>
         <p className="mt-5 text-sm">In Development</p>
       </div>
       <div>
-        <h3 className="font-bold text-2xl text-gray-700 mt-10">Blog</h3>
+        <h2 className="font-bold text-2xl text-gray-700 mt-10">Blog</h2>
         <p className="mt-5 text-sm">In Development</p>
       </div>
       <div>
-        <h3 className="font-bold text-2xl text-gray-700 mt-10">Get In Touch</h3>
+        <h2 className="font-bold text-2xl text-gray-700 mt-10">Get In Touch</h2>
         <p className="mt-5 text-sm">In Development</p>
       </div>
     </>
