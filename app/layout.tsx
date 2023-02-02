@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="en" className="text-3x h-screen overflow-auto">
       <body className="text-black bg-white h-screen w-full overflow-auto">
         <Navigation/>
-        <main className="max-w-2xl m-auto px-4 pt-10">
+        <main className="prose-slate md:mt-10 p-5 md:pl-4 md:p-0 max-w-2xl m-auto">
           {children}
         </main>
       </body>
