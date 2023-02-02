@@ -16,6 +16,6 @@ export const NEXT_SEO_DEFAULT: NextSeoProps = {
         height: 150,
       },
     ],
-    siteName: 'Brandon Lee Tran - Software Developer',
+    siteName: 'Brandon Lee Tran',
   },
 };

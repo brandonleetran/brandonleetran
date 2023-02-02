@@ -7,19 +7,18 @@ export default function Page() {
   return (
     <section className="prose prose-zinc prose-sm md:prose-md">
       <div className="flex flex-col-reverse md:flex-row pb-10 mb-10 bg-gradient-to-r from-rose-400 via-fuchsia-500 from-indigo-500 bg-[length:100%_2px] bg-no-repeat bg-bottom">
-        <div className="basis-2/3 prose prose-stone prose-sm md:prose-md max-w-md">
+        <div className="basis-2/3 max-w-md">
           <h1 className="m-0">Brandon Lee Tran</h1>
           <p className="mt-1">Software Developer</p>
-          <p>Welcome, I am a Front-end Developer based in Omaha, NE with a passion for full-stack development. I enjoy learning new technologies, cooking, and gaming on the side. This site is currently under development. Please stay tuned for more ongoing changes.</p>
+          <p className="mb-0">Welcome, I am a Front-end Developer based in Omaha, NE with a passion for full-stack development. I enjoy learning new technologies, cooking, and gaming on the side. This site is currently under development. Please stay tuned for more ongoing changes.</p>
         </div>
         <figure className="md:ml-auto">
           <Image width="150" height="150" className="rounded-full" src="/brandon_tran.jpg" alt="brandonleetran" />
         </figure>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora qui accusamus quo illum dicta earum rerum pariatur laborum doloremque quibusdam tenetur perspiciatis nisi vero, doloribus deserunt sit, fugiat ut. Rerum provident sequi quaerat tempore, suscipit esse rem. Doloribus hic voluptas mollitia cupiditate facilis aspernatur ab ipsa iure alias illo eligendi, culpa optio, voluptatum laboriosam. Dicta ipsam eius doloribus dolorem natus dolores. Esse nemo accusamus iste aperiam quam, quae sapiente officia itaque molestias dolore placeat repudiandae error libero tempora a dignissimos unde quibusdam excepturi consequuntur ad quod aliquid enim fugit aspernatur? Nemo quo officiis aut quas eligendi culpa accusamus rem perspiciatis unde, quos deleniti excepturi iure in maxime est voluptatibus?</p>
-
-        <h2 className="mb-0">Skills</h2>
-        <div className="flex-wrap flex gap-y-2.5	gap-x-5">
+        <h2>Skills</h2>
+        <div className="flex-wrap flex gap-x-5">
           <Logo path="/logos/html.png" />
           <Logo path="/logos/css-3.png" />
           <Logo path="/logos/js.png" />
