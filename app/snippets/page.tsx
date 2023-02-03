@@ -1,5 +1,5 @@
 // app/page.tsx
 // This file maps to the index route (/)
 export default function Page() {
-    return <div>Hello, I am the snippets page!</div>;
+    return <div className="prose">Under development</div>;
   }

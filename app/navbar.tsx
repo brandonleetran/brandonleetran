@@ -2,25 +2,28 @@ import Link from 'next/link'
 
 const Navigation = () => {
   return (
-    <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky sm:pb-5 sm:pt-5" >
-      <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-end md:justify-center mt-0 py-2">
-
-        <div className="block sm:hidden pr-4">
-          <button id="nav-toggle" className="flex justify-end md:items-center p-1 text-black hover:text-gray-900">
-            <svg className="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
-          </button>
-        </div>
-
-        <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
-          <ul className="text-sm font-normal list-reset lg:flex flex-1 items-center text-left">
-            <li className="mr-3">
-            <Link className="hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/">
-                Home
+    <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky md:py-5 pt-5" >
+      <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-end md:justify-center">
+        <div className="w-full flex-grow flex items-center bg-transparent text-white z-20" id="nav-content">
+          <ul className="text-sm font-normal flex flex-1 items-center text-left pl-1 md:pl-0">
+            <li>
+            <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/">
+                me
               </Link>
             </li>
-            <li className="mr-3">
-              <Link className="hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/blog">
-                Blog
+            <li>
+            <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/snippets">
+                portfolio
+              </Link>
+            </li>
+            <li>
+              <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/snippets">
+                blog
+              </Link>
+            </li>
+            <li>
+              <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/snippets">
+                drops
               </Link>
             </li>
           </ul>

@@ -1,7 +1,7 @@
 import type { NextSeoProps } from 'next-seo';
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
-  title: 'Brandon Lee Tran - Software Developer',
+  title: 'Brandon Lee Tran',
   description: 'Front-end developer, car enthusiast, dog dad.',
   openGraph: {
     type: 'website',
