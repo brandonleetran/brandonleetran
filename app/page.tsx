@@ -16,29 +16,28 @@ export default function Page() {
           <Image width="150" height="150" className="rounded-full" src="/brandon_tran.jpg" alt="brandonleetran" />
         </figure>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora qui accusamus quo illum dicta earum rerum pariatur laborum doloremque quibusdam tenetur perspiciatis nisi vero, doloribus deserunt sit, fugiat ut. Rerum provident sequi quaerat tempore, suscipit esse rem. Doloribus hic voluptas mollitia cupiditate facilis aspernatur ab ipsa iure alias illo eligendi, culpa optio, voluptatum laboriosam. Dicta ipsam eius doloribus dolorem natus dolores. Esse nemo accusamus iste aperiam quam, quae sapiente officia itaque molestias dolore placeat repudiandae error libero tempora a dignissimos unde quibusdam excepturi consequuntur ad quod aliquid enim fugit aspernatur? Nemo quo officiis aut quas eligendi culpa accusamus rem perspiciatis unde, quos deleniti excepturi iure in maxime est voluptatibus?</p>
-        <h2>Skills</h2>
-        <div className="flex-wrap flex gap-x-5">
-          <Logo path="/logos/html.png" />
-          <Logo path="/logos/css-3.png" />
-          <Logo path="/logos/js.png" />
-          <Logo path="/logos/bootstrap.png" />
-          <Logo path="/logos/tailwind.png" />
-          <Logo path="/logos/react.png" />
-          <Logo path="/logos/next.png" />
-          <Logo path="/logos/java.png" />
-          <Logo path="/logos/c-sharp.png" />
-          <Logo path="/logos/aws.png" />
-          <Logo path="/logos/github.png" />
-          <Logo path="/logos/vs.png" />
-          <Logo path="/logos/vscode.png" />
-        </div>
-        <h2>Qualifications</h2>
-        <p>In Development</p>
-        <h2>Blog</h2>
-        <p>In Development</p>
-        <h2>Get In Touch</h2>
-        <p>In Development</p>
+      <h2>Skills</h2>
+      <div className="flex-wrap flex gap-x-5">
+        <Logo path="/logos/html.png" />
+        <Logo path="/logos/css-3.png" />
+        <Logo path="/logos/js.png" />
+        <Logo path="/logos/bootstrap.png" />
+        <Logo path="/logos/tailwind.png" />
+        <Logo path="/logos/react.png" />
+        <Logo path="/logos/next.png" />
+        <Logo path="/logos/java.png" />
+        <Logo path="/logos/c-sharp.png" />
+        <Logo path="/logos/aws.png" />
+        <Logo path="/logos/github.png" />
+        <Logo path="/logos/vs.png" />
+        <Logo path="/logos/vscode.png" />
+      </div>
+      <h2>Qualifications</h2>
+      <p>In Development</p>
+      <h2>Blog</h2>
+      <p>In Development</p>
+      <h2>Get In Touch</h2>
+      <p>In Development</p>
     </section>
   );
 }

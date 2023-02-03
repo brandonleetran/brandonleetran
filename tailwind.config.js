@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         'midnight': '#111111'
       },
+      fontFamily: {
+        kaisei: ['Kaisei HarunoUmi', 'serif']
+      }
     },
   },
   plugins: [require('@tailwindcss/typography')],
