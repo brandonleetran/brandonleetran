@@ -1,19 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
-  ],
-  theme: {
-    extend: {
-      colors: {
-        'midnight': '#111111'
-      },
-      fontFamily: {
-        kaisei: ['Kaisei HarunoUmi', 'serif']
-      }
+export const content = [
+  "./app/**/*.{js,ts,jsx,tsx}",
+  "./pages/**/*.{js,ts,jsx,tsx}",
+  "./components/**/*.{js,ts,jsx,tsx}"
+];
+export const theme = {
+  extend: {
+    colors: {
+      'midnight': '#111111'
     },
+    fontFamily: {
+      kaisei: ['Kaisei HarunoUmi', 'serif']
+    }
   },
-  plugins: [require('@tailwindcss/typography')],
-}
+};
+export const plugins = [require('@tailwindcss/typography')];
