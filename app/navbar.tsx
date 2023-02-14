@@ -22,7 +22,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/snippets">
+              <Link className="font-bold hover:bg-black/[.05] bg-transparent inline-block py-2 px-4 text-black no-underline rounded-md transition-all duration-300" href="/drops">
                 drops
               </Link>
             </li>

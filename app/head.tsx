@@ -1,5 +1,5 @@
-import { NEXT_SEO_DEFAULT } from '../next-seo.config';
-import { NextSeo } from 'next-seo';
+import { NEXT_SEO_DEFAULT } from '../next-seo.config'
+import { NextSeo } from 'next-seo'
 
 export default async function Head() {
   return (
@@ -12,5 +12,5 @@ export default async function Head() {
       <link rel="mask-icon" href="/favicon/apple-touch-icon.png" color="#5bbad5"/>
       <link rel="manifest" href="/favicon/site.webmanifest" />
     </>
-  );
+  )
 }

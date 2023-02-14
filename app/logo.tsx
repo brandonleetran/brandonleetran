@@ -6,4 +6,4 @@ const Logo = ({ path }: { path: string }) => {
     )
 }
 
-export default Logo;
+export default Logo

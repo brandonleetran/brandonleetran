@@ -1,7 +1,6 @@
 // app/page.tsx
 // This file maps to the index route (/)
-import Image from 'next/image'
-import Logo from '../logo';
+import Logo from '../logo'
 
 export default function Page() {
   return (
@@ -29,5 +28,5 @@ export default function Page() {
       <h2>Get In Touch</h2>
       <p>In Development</p>
     </div>
-  );
+  )
 }
