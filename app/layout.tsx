@@ -1,5 +1,5 @@
 // This file applies to every root in the application
-import Navigation from "./Navbar"
+import Navigation from "./navbar"
 import "./globals.css"
 
 export interface RootLayoutProps {
