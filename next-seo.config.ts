@@ -1,4 +1,4 @@
-import type { NextSeoProps } from 'next-seo';
+import type { NextSeoProps } from 'next-seo'
 
 export const NEXT_SEO_DEFAULT: NextSeoProps = {
   title: 'Brandon Lee Tran',
@@ -18,4 +18,4 @@ export const NEXT_SEO_DEFAULT: NextSeoProps = {
     ],
     siteName: 'Brandon Lee Tran',
   },
-};
+}
