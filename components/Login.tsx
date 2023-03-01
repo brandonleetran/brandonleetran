@@ -8,15 +8,18 @@ export const Login = () => {
   if (session) {
     return (
       <>
-        Signed in as {session.user?.name} <br />
-        <a onClick={() => signOut()}>Sign out</a>
+        <form className="mb-5 text-sm max-w-md">
+          <input placeholder="Send your drop" className=" border rounded px-3 py-2 transition-colors focus:outline-none focus:border-2 focus:border-fuchsia-600 focus:border-opacity-30 w-full">
+          </input>
+          <a className="inline-block mt-2 cursor-pointer text-xs" onClick={() => signOut()}>Sign out</a>
+        </form>
       </>
     )
   }
   return (
-    <div className="mt-10">
-      <a className="bg-black text-white p-4 block md:inline rounded text-center cursor-pointer tracking-tight" onClick={() => signIn('github')}>
-        <img className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25"/>
+    <div className="mb-5">
+      <a className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm" onClick={() => signIn('github')}>
+        <img className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25" />
         Sign in with Github</a>
     </div>
   )
