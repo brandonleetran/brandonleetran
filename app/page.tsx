@@ -20,7 +20,7 @@ export default function Page() {
       <p className="text-black">Outside of software, I am <b>passionate</b> about many pursuits. These include health/fitness, cooking, playing video games, sports, and listening to new music. My <b>favorite</b> food to cook is steak, my favorite game to play is Valorant, and my favorite teams are the Miami Heat and Minnesota Vikings.</p>
       <p className="text-black">This site is currently hosted on Vercel as it is built with <b>NextJS</b> with a <i>sprinkle</i> of <b>Tailwind</b>. You can check out my portfolio, read my blogs, or insert a drop. You can follow me on socials listed below. Thanks for reading.</p>
       <div className="flex justify-center flex-col mt-10 gap-5">
-        <a href="https://github.com/brandonleetran" target="_blank" className="w-full h-full border hover:border-white hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg hover:p-[3px]">
+        <a href="https://github.com/brandonleetran" target="_blank" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px]">
           <div className="transition-all p-5 w-full flex flex-row justify-between rounded-md bg-white">
             <div className="flex">
               <div className="m-auto">
@@ -37,7 +37,7 @@ export default function Page() {
           </div>
         </a>
 
-        <a href="https://www.linkedin.com/in/brandon-lee-tran" target="_blank" className="w-full h-full border hover:border-white hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg hover:p-[3px]">
+        <a href="https://www.linkedin.com/in/brandon-lee-tran" target="_blank" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px]">
           <div className="transition-all p-5 w-full flex flex-row justify-between rounded-md bg-white">
             <div className="flex">
               <div className="m-auto">
@@ -54,7 +54,7 @@ export default function Page() {
           </div>
         </a>
 
-        <a href="https://twitter.com/brandonleetrann" target="_blank" className="w-full h-full border hover:border-white hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg hover:p-[3px]">
+        <a href="https://twitter.com/brandonleetrann" target="_blank" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px]">
           <div className="transition-all p-5 w-full flex flex-row justify-between rounded-md bg-white">
             <div className="flex">
               <div className="m-auto">
@@ -71,6 +71,16 @@ export default function Page() {
           </div>
         </a>
       </div>
+      <h1 className="mt-10">Get in Touch</h1>
+      <form>
+        <label htmlFor="name">Your email</label>
+        <input type="text" name="username" id="username" autoComplete="username" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/><br/>
+        <label htmlFor="subject">Your subject</label>
+        <input type="text" name="subject" placeholder="Subject" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-fuchsia-400 focus:ring-0 sm:text-sm sm:leading-6" /><br />
+        <label htmlFor="email">Your message</label>
+        <textarea name="email" placeholder="Let me know how I can help you" className="ocus:focus-blue-ring mb-2 h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/><br />
+        <input type="submit" value="#send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
+      </form>
     </section>
   )
 }
