@@ -79,7 +79,7 @@ export default function Page() {
         <input type="text" name="subject" placeholder="Subject" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-fuchsia-400 focus:ring-0 sm:text-sm sm:leading-6" /><br />
         <label htmlFor="email">Your message</label>
         <textarea name="email" placeholder="Let me know how I can help you" className="ocus:focus-blue-ring mb-2 h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/><br />
-        <input type="submit" value="#send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
+        <input type="submit" value="send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
       </form>
     </section>
   )
