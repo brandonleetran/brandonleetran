@@ -10,7 +10,6 @@ interface SocialMediaProps {
 }
 
 export const SocialMedia = ({children, logoPath, username, application, href} : SocialMediaProps) => {
-
     return (
         <a href={href} target="_blank" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px]">
         <div className="transition-all p-5 w-full flex flex-row justify-between rounded-md bg-white">
@@ -29,8 +28,6 @@ export const SocialMedia = ({children, logoPath, username, application, href} : 
         </div>
       </a>
     )
-
-
 }
 
 export default SocialMedia
