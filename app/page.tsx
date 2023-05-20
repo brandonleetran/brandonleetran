@@ -71,7 +71,7 @@ export default function Page() {
           </div>
         </a>
       </div>
-      <h1 className="mt-10">Get in Touch</h1>
+      <h2 className="mt-10">Get in Touch</h2>
       <form>
         <label htmlFor="name">Your email</label>
         <input type="text" name="username" id="username" autoComplete="username" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/><br/>
