@@ -21,8 +21,8 @@ export default function Page() {
       <p className="text-black">This site is currently hosted on Vercel as it is built with <b>NextJS</b> with a <i>sprinkle</i> of <b>Tailwind</b>. You can check out my portfolio, read my blogs, or insert a drop. You can follow me on socials listed below. Thanks for reading.</p>
       <div className="flex justify-center flex-col mt-10 gap-5">
         <SocialMedia href="https://github.com/brandonleetran" username="@brandonleetran" application="GitHub" logoPath="/logos/github.png"/>
-        <SocialMedia href="https://www.linkedin.com/in/brandon-lee-tran" username="@brandonleetrann" application="LinkedIn" logoPath="/logos/linkedin.png"/>
-        <SocialMedia href="https://www.twitter.com/brandonleetrann" username="@brandonleetran" application="Twitter" logoPath='/logos/twitter.png'/>
+        <SocialMedia href="https://www.linkedin.com/in/brandon-lee-tran" username="@brandonleetran" application="LinkedIn" logoPath="/logos/linkedin.png"/>
+        <SocialMedia href="https://www.twitter.com/brandonleetrann" username="@brandonleetrann" application="Twitter" logoPath='/logos/twitter.png'/>
       </div>
       <h2 className="mt-10">Get in Touch</h2>
       <form>
