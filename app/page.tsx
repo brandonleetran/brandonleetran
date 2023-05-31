@@ -1,7 +1,7 @@
 // app/page.tsx
 // This file maps to the index route (/)
 import Image from 'next/image'
-import SocialMedia from './SocialMedia'
+import SocialMedia from './components/SocialMedia'
 
 export default function Page() {
   return (
@@ -10,7 +10,7 @@ export default function Page() {
         <div className="basis-2/3 max-w-md">
           <h1 className="m-0">Brandon Lee Tran</h1>
           <p className="mt-1">Software Developer</p>
-          <p className="mb-0 text-black">Hey, I'm Brandon. I am a <i>Systems Application Developer</i> at Gallup. I also teach high school students HTML, CSS, and JavaScript on the weekends. My focus is learning new concepts each and everday. This site is just an another extension of my own self. <b>Please stay tuned for more ongoing changes.</b></p>
+          <p className="mb-0 text-black">Hey, I&apos;m Brandon. I am a <i>Systems Application Developer</i> at Gallup. I also teach high school students HTML, CSS, and JavaScript on the weekends. My focus is learning new concepts each and everday. This site is just an another extension of my own self. <b>Please stay tuned for more ongoing changes.</b></p>
         </div>
         <figure className="md:ml-auto">
           <Image width="150" height="150" className="rounded-full" src="/brandon_tran.jpg" alt="brandonleetran" />
@@ -35,7 +35,7 @@ export default function Page() {
         <label htmlFor="email">Your message</label>
         <textarea required name="email" placeholder="Let me know how I can help you" className="ocus:focus-blue-ring mb-2 h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/><br />
         
-        <input type="submit" value="send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
+        <input type="submit" value="Send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
       </form>
     </section>
   )

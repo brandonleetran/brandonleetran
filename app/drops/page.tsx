@@ -1,7 +1,7 @@
 import { getServerSession } from "next-auth/next"
 import authOptions from "pages/api/auth/[...nextauth]"
-import { Login } from "components/Login"
-import Message from "../../components/Message"
+import { Login } from "@/app/components/Login"
+import Message from "../components/Message"
 
 export default async function Page() {
   // this is an example how to get the session from a server component

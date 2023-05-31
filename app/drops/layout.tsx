@@ -1,4 +1,4 @@
-import AuthContext from 'components/AuthContext'
+import AuthContext from '@/app/components/AuthContext'
 
 export interface DropsLayoutProps {
   children: React.ReactNode
