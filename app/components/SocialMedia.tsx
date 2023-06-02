@@ -11,7 +11,7 @@ interface SocialMediaProps {
 
 export const SocialMedia = ({logoPath, username, application, href} : SocialMediaProps) => {
     return (
-        <a href={href} target="_blank" rel="noreferrer" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px]">
+        <a href={href} target="_blank" rel="noreferrer" className="focus:outline-none w-full h-full border focus:border-white hover:border-white focus:bg-gradient-to-r hover:bg-gradient-to-r bg-white transition-all from-rose-400 via-fuchsia-500 from-indigo-500 no-underline rounded-lg focus:p-[3px] hover:p-[3px] hover:rounded-[10px]">
         <div className="transition-all p-5 w-full flex flex-row justify-between rounded-md bg-white">
           <div className="flex">
             <div className="m-auto">
