@@ -1,6 +1,7 @@
 import NavBarLink from "./NavBarLink"
 
 const Navigation = () => {
+  console.log("The Navbar component is rendered in the server!")
   return (
     <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky md:py-5 pt-3 pb-3" aria-label='Navigation'>
       <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-end md:justify-center">

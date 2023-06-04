@@ -8,6 +8,8 @@ export interface NavBarLinkProps {
 }
 
 const NavBarLink = ( { children, path } : NavBarLinkProps) => {
+    console.log("The NavBarLink component was rendered in the client!")
+
     const pathName = usePathname()
 
     const isActiveLink = (path : string) => {
