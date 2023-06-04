@@ -1,21 +1,21 @@
-'use client';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
+'use client'
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 type NavLink = {
-  path: string;
-  name: string;
+  path: string
+  name: string
 };
 
 export interface NavBarLinkProps {
-  navlink: NavLink;
+  navlink: NavLink
 }
 
 const NavBarLink = ({ navlink }: NavBarLinkProps) => {
   console.log("The NavBarLink component was rendered in the client!")
   const pathName = usePathname()
   const isActiveLink = (path: string) => {
-    return pathName === path;
+    return pathName === path
   };
   return (
         <Link
