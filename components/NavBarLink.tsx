@@ -27,4 +27,4 @@ const NavBarLink = ({ navlink }: NavBarLinkProps) => {
   );
 };
 
-export default NavBarLink;
+export default NavBarLink

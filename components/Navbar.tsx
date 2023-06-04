@@ -1,5 +1,4 @@
 import NavBarLink from './NavBarLink'
-import Link from 'next/link'
 const Navigation = () => {
 
   const links = [ 
