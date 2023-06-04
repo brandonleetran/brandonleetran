@@ -1,3 +1,5 @@
+'use client'
+
 import NavBarLink from "./NavBarLink"
 
 const Navigation = () => {
