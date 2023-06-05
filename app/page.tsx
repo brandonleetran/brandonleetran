@@ -26,16 +26,16 @@ export default function Page() {
       </div>
       <h2 className="mt-10">Get in Touch</h2>
       <form>
-        <label htmlFor="name">Your email</label>
-        <input required type="text" name="username" id="username" autoComplete="username" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/><br/>
+        <label className="text-xs" htmlFor="name">Your email</label>
+        <input required type="text" name="username" id="username" autoComplete="username" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/>
         
-        <label htmlFor="subject">Your subject</label>
-        <input required type="text" name="subject" placeholder="Subject" className="focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-fuchsia-400 focus:ring-0 sm:text-sm sm:leading-6" /><br />
+        <label className="text-xs" htmlFor="subject">Your subject</label>
+        <input required type="text" name="subject" placeholder="Subject" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-fuchsia-400 focus:ring-0 sm:text-sm sm:leading-6" />
         
-        <label htmlFor="email">Your message</label>
-        <textarea required name="email" placeholder="Let me know how I can help you" className="ocus:focus-blue-ring mb-2 h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/><br />
+        <label className="text-xs" htmlFor="email">Your message</label>
+        <textarea required name="email" placeholder="Let me know how I can help you" className="mb-4 focus:focus-blue-ring h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/>
         
-        <input type="submit" value="Send" className="bg-black/[.05] focus:focus-blue-ring hover:bg-transparent hover:border text-black cursor-pointer font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition-colors"/><br />
+        <input type="submit" value="Send" className="cursor-pointer py-2 px-5 rounded-md text-stone-500 hover:text-black transition-all bg-black/[.05] text-sm w-full sm:w-auto"/>
       </form>
     </section>
   )
