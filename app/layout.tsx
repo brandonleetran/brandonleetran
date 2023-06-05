@@ -11,8 +11,6 @@ export const metadata: Metadata = {
   title: 'Brandon Lee Tran ⚡',
   description:
     "Front-end developer, blogger, dog dad.",
-  locale: 'en-US',
-  type: 'website',
   openGraph: {
     type: 'website',
     url: 'https://brandonleetran.tech/',
@@ -27,7 +25,6 @@ export const metadata: Metadata = {
       },
     ]
   },
-  siteName: 'Brandon Lee Tran'
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
