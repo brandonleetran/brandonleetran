@@ -32,7 +32,6 @@ export default function Page() {
       <p className="mt-5 text-black">Hey, I&apos;m Brandon. I am a <i>Systems Application Developer</i> at Gallup. I also teach high school students HTML, CSS, and JavaScript on the weekends. My focus is learning new concepts each and everday. This site is just an another extension of my own self. <b>Please stay tuned for more ongoing changes.</b></p>
       <p className="text-black">I <b>enjoy</b> building websites, especially in front-end development. I am an academic learner, problem solver, and critical thinker. My Top 5 CliftonStrengths are <i>Achiever, Restorative, Deliberative, Learner, & Analytical</i>.</p>
       <p className="text-black">Outside of software, I am <b>passionate</b> about many pursuits. These include health/fitness, cooking, playing video games, sports, and listening to new music. My <b>favorite</b> food to cook is steak, my favorite game to play is Valorant, and my favorite teams are the Miami Heat and Minnesota Vikings.</p>
-      <p className="text-black">This site is currently hosted on Vercel as it is built with <b>NextJS</b> with a <i>sprinkle</i> of <b>Tailwind</b>. You can check out my portfolio, read my blogs, or insert a drop. You can follow me on socials listed below. Thanks for reading.</p>
       <div className="flex justify-center flex-col mt-10 gap-5">
         <SocialMedia href="https://github.com/brandonleetran" username="@brandonleetran" application="GitHub" logoPath="/logos/github.png"/>
         <SocialMedia href="https://www.linkedin.com/in/brandon-lee-tran" username="@brandonleetran" application="LinkedIn" logoPath="/logos/linkedin.png"/>
@@ -41,15 +40,15 @@ export default function Page() {
       <h2 className="mt-10">Get in Touch</h2>
       <form>
         <label className="text-xs" htmlFor="name">Your email</label>
-        <input required type="text" name="username" id="username" autoComplete="username" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/>
+        <input required type="text" name="username" id="username" autoComplete="username" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" placeholder="jdoe@gmail.com"/>
         
         <label className="text-xs" htmlFor="subject">Your subject</label>
-        <input required type="text" name="subject" placeholder="Subject" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-fuchsia-400 focus:ring-0 sm:text-sm sm:leading-6" />
+        <input required type="text" name="subject" placeholder="Subject" className="mb-2 focus:focus-blue-ring w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6" />
         
         <label className="text-xs" htmlFor="email">Your message</label>
-        <textarea required name="email" placeholder="Let me know how I can help you" className="mb-4 focus:focus-blue-ring h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 focus:ring-fuchsia-400 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"/>
+        <textarea required name="email" placeholder="Let me know how I can help you" className="mb-4 focus:focus-blue-ring h-32 w-full rounded-lg block flex-1 border bg-transparent py-2 pl-2 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"/>
         
-        <input type="submit" value="Send" className="cursor-pointer py-2 px-5 rounded-md text-stone-500 hover:text-black transition-all bg-black/[.05] text-sm w-full sm:w-auto"/>
+        <input type="submit" value="Send" className="cursor-pointer py-1 px-4 rounded-md text-stone-500 hover:text-black transition-all bg-black/[.05] text-sm w-full sm:w-auto"/>
       </form>
     </section>
   )

@@ -10,7 +10,7 @@ export const Login = () => {
     return (
       <>
         <form className="flex text-sm max-w-md relative">
-          <input placeholder="Add your drop..." className="border focus:outline-violet-700 rounded-md pl-3 pr-20 py-2 w-full"/>
+          <input placeholder="Add your drop..." className="bg-stone-100 rounded-md pl-3 pr-20 py-2 w-full"/>
           <button className="rounded-md w-16 absolute text-stone-500 hover:text-black transition-all bg-black/[.05] right-1 h-7 top-1 text-xs">Sign</button>
         </form>
         <a className="inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</a>

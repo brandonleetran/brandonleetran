@@ -25,7 +25,7 @@ const Navigation = () => {
           <ul className="text-sm font-normal flex flex-1 items-center text-left pl-1 md:pl-0">
             {links.map((link) => (
                   <li key={link.path}>
-                    <Link href={link.path} className={`${isActive(link.path) ? "text-black bg-black/[.05]" : "text-stone-500"} lowercase font-bold hover:text-black bg-transparent inline-block py-2 px-4 no-underline rounded-md transition-bg duration-300`}>
+                    <Link href={link.path} className={`${isActive(link.path) ? "text-black bg-black/[.05]" : "text-stone-500"} lowercase font-bold hover:text-black bg-transparent inline-block py-1 px-4 no-underline rounded-md transition-bg duration-300`}>
                       {link.name}
                     </Link>
                   </li>
