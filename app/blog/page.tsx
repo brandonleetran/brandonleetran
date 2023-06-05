@@ -30,6 +30,13 @@
 //     </div>
 //   )
 // }
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog | Brandon Lee Tran',
+  description:
+    "Send a note!",
+};
 
 export default function Page() {
   return <div className="prose">Under development</div>
