@@ -1,6 +1,7 @@
 'use client'
 
 import { useSession, signIn, signOut } from "next-auth/react"
+import Image from 'next/image'
 
 export const Login = () => {
   // this is an example on how to get the session from the client side
@@ -18,9 +19,10 @@ export const Login = () => {
   }
   return (
     <div className="mb-5">
-      <a className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm" onClick={() => signIn('github')}>
-        <img className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25" />
-        Sign in with Github</a>
+      <a onClick={() => signIn('github')} className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm">
+        <Image alt="Github" className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25" />
+        Sign in with Github
+      </a>
     </div>
   )
 }
