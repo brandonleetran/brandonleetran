@@ -8,7 +8,7 @@ export interface RootLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: 'Brandon Lee Tran ⚡',
+  title: 'Brandon Lee Tran',
   description:
     "Front-end developer, blogger, dog dad.",
   openGraph: {
