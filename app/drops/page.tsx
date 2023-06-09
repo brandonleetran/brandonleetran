@@ -1,8 +1,8 @@
 import Login from '@/components/Login'
 import Message from "@/components/Message"
-import AuthContext from "@/components/AuthContext"
+import AuthContext from "@/libs/AuthContext"
 
-export default async function Page() {
+export default function Page() {
   return (
     <>
         <h1 className="m-0 text-2xl mb-5">Drops</h1>
