@@ -8,16 +8,20 @@ const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
 })
 
-const fetchStats = async() => await octokit.request('GET ' + `${process.env.GITHUB_PARTICIPATION_ENDPOINT}`)
+const fetchStats = async() => await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
+    owner: 'brandonleetran', 
+    repo: 'brandonleetran',
+    headers: {
+      'X-GitHub-Api-Version': '2022-11-28'
+    }
+  }
+)
 
 export default async function Page() {
   const res = await fetchStats()
-  const { all } = res.data
+  const { total } = res.data[0]
+  const totalCommits = total
 
-  let totalCommits = 0
-  for (let i = 0; i < all.length; i++) {
-    totalCommits += all[i];
-  }
   return (
     <section className="prose prose-neutral prose-sm md:prose-md max-w-xl">
       <div className="md:p-5 flex justify-start md:gap-10 flex-col md:flex-row bg-gradient-to-r from-rose-400 via-fuchsia-500 from-indigo-500 bg-[length:100%_2px] bg-no-repeat bg-bottom">
