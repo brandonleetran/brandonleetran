@@ -31,5 +31,6 @@
 //   )
 // }
 export default function Page() {
-  return <div className="prose">Under development</div>
+  return <h1 className="m-0 text-2xl mb-5">Blog</h1>
+
 }
