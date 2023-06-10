@@ -8,7 +8,6 @@ const Navigation = () => {
   const pathName = usePathname()
   const links = [ 
     { path: '/', name: 'Home' },
-    { path: '/portfolio', name: 'Portfolio' },
     { path: '/blog', name: 'Blog' },
     { path: '/drops', name: 'Drops' }
   ]

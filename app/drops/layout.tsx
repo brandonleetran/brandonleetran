@@ -6,8 +6,7 @@ export interface DropsLayoutProps {
 
 export const metadata: Metadata = {
   title: 'Drops | Brandon Lee Tran',
-  description:
-    "Send a note!"
+  description: 'Sign a drop'
 }
 
 export default function DropsLayout({ children }: DropsLayoutProps) {
