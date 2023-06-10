@@ -21,7 +21,7 @@ const fetchStats = async () : Promise<any | null> => {
       await new Promise(res => setTimeout(res, 5000))
       console.log('202 Accepted. Waiting for the response...')
       console.log(res)
-      return fetchStats()
+      return await fetchStats()
     }
 
     // console.log(`Success! Status ${res?.status}. Rate limit remaining: ${res?.headers[ 'x-ratelimit-remaining']}`)
