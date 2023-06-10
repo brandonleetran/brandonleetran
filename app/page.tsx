@@ -2,27 +2,40 @@
 // This file maps to the index route (/)
 import Image from 'next/image'
 import SocialMedia from '../components/SocialMedia'
-import { Octokit } from 'octokit'
+import { Octokit }  from 'octokit'
 
 const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
 })
 
-const fetchStats = async() => await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
-    owner: 'brandonleetran', 
-    repo: 'brandonleetran'
+const fetchStats = async () => {
+  try {
+    const res = await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
+      owner: 'brandonleetran', 
+      repo: 'brandonleetran'
+    })
+    
+    if (res.status == 200) return res
+    if (res.status === 202) console.log('202 Accepted. Waiting for the response...')
+
+    // console.log(`Success! Status ${res?.status}. Rate limit remaining: ${res?.headers[ 'x-ratelimit-remaining']}`)
+
   }
-)
+  catch (error : any) {
+    console.log(error)
+    console.log(`Error! Status: ${error.status}.`)
+    return null
+  }
+}
 
 export default async function Page() {
+  // fetchStats
   const res = await fetchStats()
   console.log(res)
-  let total = res.data[0]?.total
-  if (total) {
-    console.log(total)
-  } else {
-    total = 0
-  }
+
+  // check if the response is null or undefined
+  const { total } = (res == (null || undefined)) ? { total: 0 } : res.data[0]
+  console.log(`The total is ${total}!`)
 
   return (
     <section className="prose prose-neutral prose-sm md:prose-md max-w-xl">
