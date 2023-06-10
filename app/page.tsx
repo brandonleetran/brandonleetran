@@ -16,7 +16,12 @@ const fetchStats = async () => {
     })
     
     if (res.status == 200) return res
-    if (res.status === 202) console.log('202 Accepted. Waiting for the response...')
+    if (res.status === 202){
+      // TODO: Figure out how to handle a 202 response... do we call the API again?
+      console.log('202 Accepted. Waiting for the response...')
+      console.log(res)
+      return null
+    }
 
     // console.log(`Success! Status ${res?.status}. Rate limit remaining: ${res?.headers[ 'x-ratelimit-remaining']}`)
 
