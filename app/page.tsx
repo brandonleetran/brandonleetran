@@ -17,8 +17,11 @@ const fetchStats = async () : Promise<any | null> => {
     
     if (res.status == 200) return res
     if (res.status === 202){
-      // TODO: Figure out how to handle a 202 response... do we call the API again?
-      await new Promise(res => setTimeout(res, 5000))
+      // if the data hasn't been cached when you query a repository's statistics, 
+      // you'll receive a 202 response; a background job is also fired to start compiling these statistics.
+      // you should allow the job a short time to complete, and then submit the request again
+      // if the job has completed, that request will receive a 200 response with the statistics in the response body
+      await new Promise(res => setTimeout(res, 30000))
       console.log('202 Accepted. Waiting for the response...')
       console.log(res)
       return await fetchStats()
