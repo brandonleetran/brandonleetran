@@ -10,21 +10,18 @@ const octokit = new Octokit({
 
 const fetchStats = async() => await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
     owner: 'brandonleetran', 
-    repo: 'brandonleetran',
-    headers: {
-      'X-GitHub-Api-Version': '2022-11-28'
-    }
+    repo: 'brandonleetran'
   }
 )
 
 export default async function Page() {
   const res = await fetchStats()
   console.log(res)
-  const total = res.data[0]?.total
+  let total = res.data[0]?.total
   if (total) {
-    console.log(total);
+    console.log(total)
   } else {
-    console.log("Total is undefined");
+    total = 0
   }
 
   return (
