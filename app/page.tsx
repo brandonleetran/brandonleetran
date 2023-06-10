@@ -21,7 +21,7 @@ const fetchStats = async () : Promise<any | null> => {
       // you'll receive a 202 response; a background job is also fired to start compiling these statistics.
       // you should allow the job a short time to complete, and then submit the request again
       // if the job has completed, that request will receive a 200 response with the statistics in the response body
-      await new Promise(res => setTimeout(res, 30000))
+      await new Promise(res => setTimeout(res, 5000))
       console.log('202 Accepted. Waiting for the response...')
       console.log(res)
       return await fetchStats()
