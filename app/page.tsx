@@ -19,8 +19,7 @@ const fetchStats = async() => await octokit.request('GET ' + `${process.env.GITH
 
 export default async function Page() {
   const res = await fetchStats()
-  const total = res.data[0]?.total; // Add a check for undefined
-
+  const total = res.data[0]?.total
   if (total) {
     console.log(total);
   } else {
