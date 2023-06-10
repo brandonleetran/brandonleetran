@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import SocialMedia from '../components/SocialMedia'
 import { Octokit }  from 'octokit'
+import { METHODS } from 'http'
 
 const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
@@ -14,6 +15,8 @@ const fetchStats = async () : Promise<any | null> => {
       owner: 'brandonleetran', 
       repo: 'brandonleetran'
     })
+
+    console.log(res)
     
     if (res.status == 200) return res
     if (res.status === 202){
@@ -22,7 +25,6 @@ const fetchStats = async () : Promise<any | null> => {
       // you should allow the job a short time to complete, and then submit the request again
       // if the job has completed, that request will receive a 200 response with the statistics in the response body
       console.log('202 Accepted. Waiting for the response...')
-      console.log(res)
       await new Promise(res => setTimeout(res, 10000))
       return await fetchStats()
     }
