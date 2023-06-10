@@ -8,7 +8,7 @@ const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
 })
 
-const fetchStats = async () => {
+const fetchStats = async () : Promise<any | null> => {
   try {
     const res = await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
       owner: 'brandonleetran', 
@@ -18,9 +18,10 @@ const fetchStats = async () => {
     if (res.status == 200) return res
     if (res.status === 202){
       // TODO: Figure out how to handle a 202 response... do we call the API again?
+      await new Promise(res => setTimeout(res, 5000))
       console.log('202 Accepted. Waiting for the response...')
       console.log(res)
-      return null
+      return fetchStats()
     }
 
     // console.log(`Success! Status ${res?.status}. Rate limit remaining: ${res?.headers[ 'x-ratelimit-remaining']}`)
@@ -29,12 +30,12 @@ const fetchStats = async () => {
   catch (error : any) {
     console.log(error)
     console.log(`Error! Status: ${error.status}.`)
-    return null
+    return Promise<null>
   }
 }
 
 export default async function Page() {
-  // fetchStats
+  // fetchStats and log the response
   const res = await fetchStats()
   console.log(res)
 
