@@ -3,6 +3,8 @@ import Message from '@/components/Message'
 import AuthContext from '@/libs/AuthContext'
 import Prisma from '@/libs/Prisma'
 
+export const dynamic = 'force-dynamic'
+
 const fetchDrops = async () => {
   return await Prisma.drop.findMany()
 }
