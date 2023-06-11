@@ -1,10 +1,8 @@
 'use client'
-
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 const Navigation = () => {
-
   const pathName = usePathname()
   const links = [ 
     { path: '/', name: 'Home' },
@@ -16,7 +14,6 @@ const Navigation = () => {
     return path === pathName
   }
 
-  console.log("The navigation component is rendered in the client!")
   return (
     <nav className="backdrop-blur-3xl bg-white/[.6] w-full z-10 top-0 sticky md:py-5 pt-3 pb-3" aria-label='Navigation'>
       <div className="w-full m-auto max-w-2xl container flex flex-wrap items-center justify-end md:justify-center">
