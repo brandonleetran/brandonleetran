@@ -3,13 +3,13 @@
 import Image from 'next/image'
 import SocialMedia from '../components/SocialMedia'
 import { Octokit }  from 'octokit'
-import { METHODS } from 'http'
+import Prisma from '@/libs/Prisma'
 
 const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
 })
 
-const fetchStats = async () : Promise<any | null> => {
+const fetchCommits = async () : Promise<any | null> => {
   try {
     const res = await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
       owner: 'brandonleetran', 
@@ -26,7 +26,7 @@ const fetchStats = async () : Promise<any | null> => {
       // if the job has completed, that request will receive a 200 response with the statistics in the response body
       console.log('202 Accepted. Waiting for the response...')
       await new Promise(res => setTimeout(res, 10000))
-      return await fetchStats()
+      return await fetchCommits()
     }
 
     // console.log(`Success! Status ${res?.status}. Rate limit remaining: ${res?.headers[ 'x-ratelimit-remaining']}`)
@@ -39,13 +39,18 @@ const fetchStats = async () : Promise<any | null> => {
   }
 }
 
+const fetchDrops = async () => await Prisma.drop.count()
+
 export default async function Page() {
   // fetchStats and log the response
-  const res = await fetchStats()
-  console.log(res)
+  const commits = await fetchCommits()
+  const drops = await fetchDrops()
+
+  console.log(drops)
+  console.log(commits)
 
   // check if the response is null or undefined
-  const { total } = (res == (null || undefined)) ? { total: 0 } : res.data[0]
+  const { total } = (commits == (null || undefined)) ? { total: 0 } : commits.data[0]
   console.log(`The total is ${total}!`)
 
   return (
@@ -65,7 +70,7 @@ export default async function Page() {
               <a target="_blank" rel="noreferrer" className="flex items-center gap-2 text-stone-500 align-top no-underline font-normal" href="/drops">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 50 50">
               <path fill="#231F20" d="M23.779,40.594c6.617,0,12-5.188,12-11.564c0-2.114-0.599-4.184-1.749-6.012L24.599,9.035  c-0.186-0.276-0.497-0.441-0.829-0.441c-0.333,0-0.644,0.166-0.829,0.441l-9.436,14.018c-1.129,1.798-1.726,3.865-1.726,5.976  C11.779,35.406,17.162,40.594,23.779,40.594z M15.181,24.144l8.59-12.76l8.584,12.726c0.933,1.482,1.425,3.184,1.425,4.92  c0,5.274-4.486,9.564-10,9.564s-10-4.291-10-9.564C13.779,27.295,14.271,25.596,15.181,24.144z"/>
-              </svg>41 drops all time</a>
+              </svg>{drops} drops all time</a>
               <a target="_blank" rel="noreferrer" className="flex items-center gap-2 text-stone-500 align-top no-underline font-normal" href="/blog">
               <svg className="h-5 w-5" width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.25 18.0001L9 11.2501L13.306 15.5571C14.5507 13.1029 16.6044 11.1535 19.12 10.0381L21.86 8.81809M21.86 8.81809L15.92 6.53809M21.86 8.81809L19.58 14.7591" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></svg>
               0 blog views all time</a>
