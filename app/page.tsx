@@ -9,6 +9,8 @@ const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
 })
 
+export const dynamic = 'force-dynamic'
+
 const fetchCommits = async () : Promise<any | null> => {
   try {
     const res = await octokit.request('GET ' + `${process.env.GITHUB_CONTRIBUTORS_ENDPOINT}`, { 
