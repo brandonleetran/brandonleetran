@@ -1,5 +1,5 @@
 'use client'
-
+import { useRouter } from 'next/navigation'
 import { useSession, signIn, signOut } from "next-auth/react"
 import Image from 'next/image'
 import { useState } from 'react'
@@ -8,6 +8,7 @@ export const Login = () => {
   // this is an example on how to get the session from the client side
   const [message, setMessage] = useState('')
   const { data: session } = useSession()
+  const router = useRouter()
 
   type Drop = {
     name : string,
@@ -15,7 +16,10 @@ export const Login = () => {
     message : string
   }
 
-  const createDrop = async ()  => {
+  const createDrop = async (e : any)  => {
+
+    // prevent default
+    e.preventDefault()
 
     // create drop
     const drop: Drop = {
@@ -24,17 +28,27 @@ export const Login = () => {
       message: message,
     }
 
-    // add drop to database here 
+    // add drop to database here
+    const url = '/api/drops'
+    await fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(drop)
+    })
+
+    // reset form
+    setMessage('')
+
+    // reload the page
+    router.refresh()
+
+    // TODO: handle API http status codes here
   }
 
   if (session) {
     return (
       <>
-        <form onSubmit={(createDrop)}  className="flex text-sm max-w-md relative">
-          <input onChange={(e) => {
-            setMessage(e.target.value)
-            console.log(message)
-          } } placeholder="Add your drop..." className="bg-stone-100 rounded-md pl-3 pr-20 py-2 w-full"/>
+        <form id="drops-form" onSubmit={(createDrop)}  className="flex text-sm max-w-md relative">
+          <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Add your drop..." className="bg-stone-100 rounded-md pl-3 pr-20 py-2 w-full"/>
           <button type="submit" className="rounded-md w-16 absolute text-stone-500 hover:text-black transition-all bg-black/[.05] right-1 h-7 top-1 text-xs">Sign</button>
         </form>
         <a className="inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</a>

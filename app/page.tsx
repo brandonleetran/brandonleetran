@@ -50,8 +50,6 @@ export default async function Page() {
   // fetchStats and log the response
   //const commits = await fetchCommits()
   const drops = await fetchDrops()
-
-  console.log(drops)
   // console.log(commits)
 
   // // check if the response is null or undefined
