@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import SocialMedia from '../components/SocialMedia'
 import { Octokit }  from 'octokit'
-import Prisma from '@/libs/Prisma'
+import { fetchDrops } from '@/components/Stats'
 
 const octokit = new Octokit({
   auth: `${process.env.GITHUB_PAT}`
@@ -38,8 +38,6 @@ const fetchCommits = async () : Promise<any | null> => {
     return Promise<null>
   }
 }
-
-const fetchDrops = async () => await Prisma.drop.count()
 
 export default async function Page() {
   // fetchStats and log the response
