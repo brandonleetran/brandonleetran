@@ -5,11 +5,12 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export const Login = () => {
-  // this is an example on how to get the session from the client side
+  // instantiate hooks
   const [message, setMessage] = useState('')
   const { data: session } = useSession()
   const router = useRouter()
 
+  // create type object for database
   type Drop = {
     name : string,
     email: string
@@ -32,7 +33,10 @@ export const Login = () => {
     const url = '/api/drops'
     await fetch(url, {
       method: 'POST',
-      body: JSON.stringify(drop)
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(drop),
     })
 
     // reset form

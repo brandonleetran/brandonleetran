@@ -10,7 +10,8 @@ const fetchDrops = async () => {
 }
 
 export default async function Page() {
-  const drops = await fetchDrops()
+  let drops = await fetchDrops()
+  drops = drops.reverse()
   return (
     <>
         <h1 className="m-0 text-2xl mb-5">Drops</h1>
