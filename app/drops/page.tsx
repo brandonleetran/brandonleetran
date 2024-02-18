@@ -19,7 +19,7 @@ export default async function Page() {
           <Login/>
         </AuthContext>
         <div className="flex flex-col gap-2 text-sm">
-          {drops.map((drop) => (
+          {drops.map((drop : any) => (
             <Message key={drop.id} avatar="" username={drop.name}>{drop.message}</Message>
           ))}
         </div>
