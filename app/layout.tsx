@@ -36,9 +36,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="mask-icon" href="/favicon/apple-touch-icon.png" color="#5bbad5"/>
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <body className="text-black bg-white h-screen w-full overflow-auto pb-20">
+        <body className="text-white bg-[#111010] mx-10">
           <Navigation />
-          <main className="prose-slate p-5 md:p-0 max-w-2xl m-auto">
+          <main className="max-w-2xl m-auto">
             {children}
           </main>
         </body>

@@ -6,14 +6,14 @@ import Image from 'next/image'
 export const Login = () => {
   // this is an example on how to get the session from the client side
   const { data: session } = useSession()
-  if (session) {
+  if (!session) {
     return (
       <>
         <form className="flex text-sm max-w-md relative">
-          <input placeholder="Add your drop..." className="border focus:outline-violet-700 rounded-md pl-3 pr-20 py-2 w-full"/>
-          <button className="rounded-md w-16 absolute text-stone-500 hover:text-black transition-all bg-black/[.05] right-1 h-7 top-1 text-xs">Sign</button>
+          <input placeholder="Add your drop..." className="text-black border focus:outline-none rounded-md pl-3 pr-20 py-2 w-full"/>
+          <button className="rounded-md w-16 absolute text-neutral-500 hover:text-black transition-all bg-neutral-100 right-1 h-7 top-1 text-xs">Sign</button>
         </form>
-        <a className="inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</a>
+        <a className="text-neutral-400 hover:text-white transition-all inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</a>
       </>
     )
   }

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 
-interface PortfolioLayoutProps {
+interface WorkLayoutProps {
     children : React.ReactNode
 }
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Brandon Lee Tran',
+  title: 'Work | Brandon Lee Tran',
   description:
     "Here's what I been up to."
 }
 
-export default function PortfolioLayoutProps({ children }: PortfolioLayoutProps) {
+export default function WorkLayoutProps({ children }: WorkLayoutProps) {
     return <>
       {children} 
     </>

@@ -5,7 +5,7 @@ import AuthContext from "@/components/AuthContext"
 export default async function Page() {
   return (
     <>
-        <h1 className="m-0 text-2xl mb-5">Drops</h1>
+        <h1 className="text-medium text-2xl mb-5">sign a drop</h1>
         <AuthContext>
           <Login/>
         </AuthContext>
