@@ -32,23 +32,35 @@ export const Login = () => {
     // add drop to database here
     if (message.length > 0) {
       const url = '/api/drops'
-      await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(drop),
-      })
+      try
+      {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(drop),
+        })
+
+        if (res.ok) {
+          setMessage('')
+          // reload the page
+          router.refresh()
+        }
+        else {
+          // TODO
+          console.error('Failed to add a drop!')
+        }
+      }
+      catch (error) {
+        // TODO
+        console.error('Tried to POST drop')
+      }
     }
     else {
-      console.log('Add a message')
+      // TODO
+      console.log('Message is empty')
     }
-
-    // reset form
-    setMessage('')
-
-    // reload the page
-    router.refresh()
   }
 
   if (session) {
