@@ -1,12 +1,14 @@
 'use client'
-
+import { useRouter } from 'next/navigation'
 import { useSession, signIn, signOut } from "next-auth/react"
 import Image from 'next/image'
+import { useState } from 'react'
 
 export const Login = () => {
-  // this is an example on how to get the session from the client side
+  // instantiate hooks
+  const [message, setMessage] = useState('')
   const { data: session } = useSession()
-  if (!session) {
+  if (session) {
     return (
       <>
         <form className="flex text-sm max-w-md relative">
