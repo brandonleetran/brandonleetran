@@ -55,20 +55,20 @@ export const Login = () => {
     return (
       <>
         <form id="drops-form" onSubmit={(createDrop)} className="flex text-sm max-w-md relative">
-          <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Add your drop..." className="text-black border focus:outline-none rounded-md pl-3 pr-20 py-2 w-full"/>
+          <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Add your drop..." className="text-black border rounded-md pl-3 pr-20 py-2 w-full"/>
           <button type="submit" className="rounded-md w-16 absolute text-neutral-500 hover:text-black transition-all bg-neutral-100 right-1 h-7 top-1 text-xs">Sign</button>
         </form>
-        <a className="text-neutral-400 hover:text-white transition-all inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</a>
+        <button className="text-neutral-400 hover:text-white transition-all inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</button>
       </>
     )
   }
   else {
     return (
       <div className="mb-5">
-        <a onClick={() => signIn('github')} className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm">
+        <button onClick={() => signIn('github')} className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm">
           <Image alt="Github" className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25" />
           Sign in with Github
-        </a>
+        </button>
       </div>
     )
   }
