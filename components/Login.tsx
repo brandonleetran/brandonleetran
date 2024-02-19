@@ -74,7 +74,7 @@ export const Login = () => {
       <>
         <form id="drops-form" onSubmit={(createDrop)} className="flex text-sm max-w-md relative">
           <input value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Add your drop..." className="text-black border rounded-md pl-3 pr-20 py-2 w-full"/>
-          <button type="submit" className="rounded-md w-16 absolute text-neutral-500 hover:text-black transition-all bg-neutral-100 right-1 h-7 top-1 text-xs">Sign</button>
+          <button type="submit" className="rounded-md w-16 absolute text-neutral-600 hover:text-black transition-all bg-neutral-100 right-1 h-7 top-1 text-xs">Sign</button>
         </form>
         <button className="text-neutral-400 hover:text-white transition-all inline-block mt-2 mb-6 cursor-pointer text-xs" onClick={() => signOut()}>&rarr;	Sign out</button>
       </>
