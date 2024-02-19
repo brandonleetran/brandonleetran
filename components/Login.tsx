@@ -3,6 +3,12 @@ import { useRouter } from 'next/navigation'
 import { useSession, signIn, signOut } from "next-auth/react"
 import Image from 'next/image'
 import { useState } from 'react'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+config.autoAddCss = false
 
 export const Login = () => {
   // instantiate hooks
@@ -78,8 +84,7 @@ export const Login = () => {
     return (
       <div className="mb-5">
         <button onClick={() => signIn('github')} className="bg-black text-white p-4 block rounded text-center cursor-pointer tracking-tight max-w-sm">
-          <Image alt="Github" className="inline mr-2 align-bottom" src="/logos/github-light.png" width="25" height="25" />
-          Sign in with Github
+          <span className="mr-2"><FontAwesomeIcon icon={faGithub}/></span>Sign in with Github
         </button>
       </div>
     )
