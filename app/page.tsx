@@ -21,7 +21,7 @@ export default async function Page() {
   // const drops = await fetchDrops()
   return (
     <section>
-      <h1 className="font-bold text-4xl">Brandon Lee Tran</h1>
+      <h1 className="font-bold text-3xl">Brandon Lee Tran</h1>
       <small>Frontend Software Developer</small>
       <div className="mt-5 flex gap-5 md:gap-10 items-center">
         <Tooltip className="text-xs text-white bg-[#111010] border px-3" offset={15} color="foreground" placement="right" showArrow={false} content="Yes, this was generated using an AI">
