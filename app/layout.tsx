@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Front-end developer, blogger, dog dad.',
     images: [
       {
-        url: '/brandon_tran.jpg',
+        url: '/brandonleetran.webp',
         alt: 'Brandon Lee Tran',
         width: 150,
         height: 150,
