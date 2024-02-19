@@ -17,11 +17,11 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="max-w-2xl m-auto mt-14 mb-14">
+    <nav className="max-w-2xl m-auto pt-14 pb-14">
       <ul className="flex">
         {links.map((link) => (
               <li key={link.path}>
-                <Link href={link.path} className={`${isActive(link.path) ? "text-white" : "text-neutral-400"} hover:text-white lowercase pr-4 duration-300`}>
+                <Link href={link.path} className={`${isActive(link.path) ? "text-white" : "text-neutral-400"} hover:text-white pr-4 duration-300`}>
                   {link.name}
                 </Link>
               </li>

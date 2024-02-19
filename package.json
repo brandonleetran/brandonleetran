@@ -10,7 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.1.4",
+    "@nextui-org/react": "^2.2.9",
     "@prisma/client": "^5.9.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "18.11.18",
@@ -23,6 +29,7 @@
     "encoding": "^0.1.13",
     "eslint": "8.32.0",
     "eslint-config-next": "^13.4.4",
+    "framer-motion": "^11.0.5",
     "next": "^13.4.4",
     "next-auth": "^4.22.1",
     "next-seo": "^5.15.0",

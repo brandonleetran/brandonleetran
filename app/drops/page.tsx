@@ -14,7 +14,7 @@ export default async function Page() {
   drops = drops.reverse()
   return (
     <>
-        <h1 className="text-medium text-2xl mb-5">sign a drop</h1>
+      <h1 className="font-bold text-3xl mb-5">Sign a Drop</h1>
         <AuthContext>
           <Login/>
         </AuthContext>

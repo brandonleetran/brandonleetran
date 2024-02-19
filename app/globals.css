@@ -5,5 +5,7 @@
 @layer base {
   p {
     @apply text-neutral-400;
+    @apply text-sm;
+    @apply leading-7;
   }
 }
