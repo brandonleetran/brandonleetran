@@ -4,8 +4,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
-import { faArrowRight, faArrowTrendUp } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faArrowRight, faArrowTrendUp, faDroplet } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import Image from 'next/image'
 import { Tooltip } from "@nextui-org/tooltip";
 
@@ -15,10 +15,11 @@ config.autoAddCss = false
 export const dynamic = 'force-dynamic'
 
 // fetch drops
-const fetchDrops = async () => await Prisma.drop.count()
+const fetchDropCount = async () => await Prisma.drop.count()
 
 export default async function Page() {
-  // const drops = await fetchDrops()
+  const dropCount = await fetchDropCount()
+
   return (
     <section>
       <h1 className="font-bold text-3xl">Brandon Lee Tran</h1>
@@ -28,9 +29,9 @@ export default async function Page() {
           <Image src="/brandonleetran.webp" alt="Brandon Lee Tran" width="100" height="100"/>
         </Tooltip>
         <div>
-          <p><span className="mr-2"><FontAwesomeIcon icon={faGithub}/></span>126 commits to this repo</p>
-          <p><span className="mr-2 "><FontAwesomeIcon icon={faArrowTrendUp}/></span>0 blog views all time</p>
-          <p><span className="mr-2"><FontAwesomeIcon icon={faXTwitter}/></span>37.9k tweets all time</p>
+          <p><FontAwesomeIcon icon={faGithub} className="min-w-[30px]"/><span>135 commits to this repo</span></p>
+          <p><FontAwesomeIcon icon={faArrowTrendUp} className="min-w-[30px]"/><span>0 blog views all time</span></p>
+          <p><FontAwesomeIcon icon={faDroplet} className="min-w-[30px]"/><span>{dropCount} drops all time</span></p>
         </div>
       </div>
       <p className="mt-5">Hi, I&apos;m Brandon 👋🏽. I am a <b>Software Developer at Gallup.</b> I am an academic lifer with a keen interest in building accessible performant sites. My passion in software is in frontend development where I have taught students HTML, CSS, and JavaScript. This website is simply an extension of myself. Stay tuned for more updates!</p>
