@@ -20,9 +20,9 @@ const Footer = ({children} : FooterProps) => {
                         <Link href='/subscribe'>Subscribe</Link>
                     </div>
                     <div className='flex flex-col gap-3'>
-                        <Link href='https://www.x.com/brandonleentrann'><FontAwesomeIcon icon={faXTwitter}/></Link>
+                        <Link href='https://www.x.com/brandonleetrann'><FontAwesomeIcon icon={faXTwitter}/></Link>
                         <Link href='https://www.github.com/brandonleetran'>GitHub</Link>
-                        <Link href='https://www.linkedin.com/brandon-lee-tran'>LinkedIn</Link>
+                        <Link href='https://www.linkedin.com/in/brandon-lee-tran'>LinkedIn</Link>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <Link href='/work'>Portfolio</Link>

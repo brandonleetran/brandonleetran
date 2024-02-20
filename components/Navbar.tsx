@@ -17,7 +17,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="max-w-2xl m-auto pt-14 pb-14">
+    <nav className="max-w-2xl m-auto pt-14 mb-10">
       <ul className="flex">
         {links.map((link) => (
               <li key={link.path}>

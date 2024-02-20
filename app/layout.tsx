@@ -1,9 +1,13 @@
 // This file applies to every root in the application
 import Navigation from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from "./providers";
+
+config.autoAddCss = false
 
 export interface RootLayoutProps {
   children: React.ReactNode

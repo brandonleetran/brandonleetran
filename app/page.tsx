@@ -1,7 +1,6 @@
 import Prisma from '@/libs/Prisma'
 import Link from 'next/link'
 import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
 import { faArrowRight, faArrowTrendUp, faDroplet } from '@fortawesome/free-solid-svg-icons'
