@@ -8,4 +8,14 @@
     @apply text-sm;
     @apply leading-7;
   }
+
+  a {
+    @apply text-neutral-400;
+    @apply hover:text-white;
+    @apply transition-all;
+  }
+
+  footer a {
+    @apply text-sm;
+  }
 }

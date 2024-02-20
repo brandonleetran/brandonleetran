@@ -1,5 +1,6 @@
 // This file applies to every root in the application
-import Navigation from '../components/Navbar'
+import Navigation from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Providers } from "./providers";
@@ -39,11 +40,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <body className="text-white bg-[#111010] px-10">
           <Navigation />
-          <main className="max-w-2xl m-auto pb-14">
+          <main className="max-w-2xl m-auto">
             <Providers>
               {children}
             </Providers>
           </main>
+          <Footer  />
         </body>
       </html>
   )
