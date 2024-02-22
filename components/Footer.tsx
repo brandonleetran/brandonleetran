@@ -10,7 +10,7 @@ interface FooterProps {
 const Footer = ({children} : FooterProps) => {
     return (
         <>
-            <hr className='max-w-2xl m-auto mt-10'/>
+            <hr />
             <footer className='max-w-2xl m-auto'>
                 <p className='my-5'><FontAwesomeIcon icon={faSpotify} color='#1ED760'/><span className='ml-2 text-sm'>Last played: Alan Walker - Fade</span></p>
                 <div className='grid grid-cols-3 gap-5'>
@@ -20,12 +20,12 @@ const Footer = ({children} : FooterProps) => {
                         <Link href='/subscribe'>Subscribe</Link>
                     </div>
                     <div className='flex flex-col gap-3'>
-                        <Link href='https://www.x.com/brandonleetrann'><FontAwesomeIcon icon={faXTwitter}/></Link>
-                        <Link href='https://www.github.com/brandonleetran'>GitHub</Link>
-                        <Link href='https://www.linkedin.com/in/brandon-lee-tran'>LinkedIn</Link>
+                        <Link href='https://www.x.com/brandonleetrann' target='_blank'><FontAwesomeIcon icon={faXTwitter}/></Link>
+                        <Link href='https://www.github.com/brandonleetran' target='_blank'>GitHub</Link>
+                        <Link href='https://www.linkedin.com/in/brandon-lee-tran' target='blank'>LinkedIn</Link>
                     </div>
                     <div className='flex flex-col gap-3'>
-                        <Link href='/work'>Portfolio</Link>
+                        <Link href='https://brandonleetran-resume.vercel.app/' target='_blank'>Portfolio</Link>
                         <Link href='/blog'>Blog</Link>
                         <Link href='/drops'>Sign a Drop</Link>
                     </div>

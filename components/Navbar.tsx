@@ -1,13 +1,16 @@
 'use client'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons'
+import { Button } from "@nextui-org/button";
 
 const Navigation = () => {
 
   const pathname = usePathname()
   const links = [ 
     { path: '/', name: 'Home' },
-    { path: '/work', name: 'Work' },
+    { path: '/about', name: 'About' },
     { path: '/blog', name: 'Blog' },
     { path: '/drops', name: 'Drops' }
   ]
@@ -17,7 +20,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="max-w-2xl m-auto pt-14 mb-10">
+    <nav className="max-w-2xl m-auto pt-14 mb-10 flex items-baseline justify-between">
       <ul className="flex">
         {links.map((link) => (
               <li key={link.path}>
@@ -27,6 +30,7 @@ const Navigation = () => {
               </li>
             ))}
       </ul>
+      <Button size='sm' className='border-2 border-neutral-400 bg-transparent text-neutral-400 hover:border-white hover:text-white transition-all' isIconOnly variant="faded" aria-label='Change theme'><FontAwesomeIcon icon={faSun} /></Button>
     </nav>
   )
 }

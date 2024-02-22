@@ -15,6 +15,13 @@
     @apply transition-all;
   }
 
+  hr {
+    @apply max-w-2xl;
+    @apply m-auto;
+    @apply my-5;
+    @apply border-neutral-400;
+  }
+
   footer a {
     @apply text-sm;
   }
