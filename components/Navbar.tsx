@@ -4,10 +4,13 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun, faMoon } from '@fortawesome/free-regular-svg-icons'
 import { Button } from "@nextui-org/button";
+import { useState } from 'react'
 
 const Navigation = () => {
 
+  const [isDark, setIsDark] = useState(true)
   const pathname = usePathname()
+
   const links = [ 
     { path: '/', name: 'Home' },
     { path: '/about', name: 'About' },
@@ -17,6 +20,10 @@ const Navigation = () => {
 
   const isActive = (path : string) => {
     return path === pathname
+  }
+
+  const toggleIcon = () => {
+    setIsDark(!isDark);
   }
 
   return (
@@ -30,7 +37,7 @@ const Navigation = () => {
               </li>
             ))}
       </ul>
-      <Button size='sm' className='border-2 border-neutral-400 bg-transparent text-neutral-400 hover:border-white hover:text-white transition-all' isIconOnly variant="faded" aria-label='Change theme'><FontAwesomeIcon icon={faSun} /></Button>
+      <Button onClick={toggleIcon} size='sm' className='border-2 border-neutral-400 bg-transparent text-neutral-400 hover:border-white hover:text-white transition-all' isIconOnly variant="faded" aria-label='Change theme'><FontAwesomeIcon icon={isDark as boolean ? faSun : faMoon} /></Button>
     </nav>
   )
 }
