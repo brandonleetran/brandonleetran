@@ -33,12 +33,12 @@ export default async function Page() {
           <p><FontAwesomeIcon icon={faDroplet} className="min-w-[30px]"/><span>{dropCount} drops all time</span></p>
         </div>
       </div>
-      <p className="mt-5">Hi, I&apos;m Brandon 👋🏽. I am a <b>Software Developer at Gallup.</b> I am an academic lifer with a keen interest in building accessible performant sites. My passion in software is in frontend development where I have taught students HTML, CSS, and JavaScript. This website is simply an extension of myself. Stay tuned for more updates!</p>
+      <p className="mt-5">Hi, I&apos;m <Link href="/about" className="text-white text-sm underline decoration-neutral-500">Brandon</Link> 👋🏽. I am a <b>Software Developer at Gallup.</b> I am an academic lifer with a keen interest in building accessible performant sites. My passion in software is in frontend development where I have mentored students HTML, CSS, and JavaScript. This website is simply an extension of myself. Stay tuned for more updates!</p>
       <h2 className="font-bold text-2xl my-5">Featured Posts</h2>
       <div className="h-auto flex flex-col md:flex-row gap-5 mb-5 text-md font-semibold">
         <div className="flex-1 md:h-[200px] bg-gradient-to-r from-purple-500  to-pink-500 p-1 rounded-lg">
           <div className="p-5 h-full bg-[#111010] rounded-md flex flex-col justify-between">
-            <h3>What&apos;s it like being a frontend software developer?</h3>
+          <h3>What&apos;s it like being a frontend software developer?</h3>
             <p className="font-thin mt-5"><span className="mr-[10px]"><FontAwesomeIcon icon={faEye} /></span>0</p>
           </div>
         </div>
