@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 @layer base {
   p {
     @apply text-neutral-400;
@@ -9,7 +12,7 @@
     @apply leading-7;
   }
 
-  a {
+  a:not(.blind-simon-says, .portfolio) {
     @apply text-neutral-400;
     @apply hover:text-white;
     @apply transition-all;
@@ -24,5 +27,19 @@
 
   footer a {
     @apply text-sm;
+  }
+
+  .portfolio {
+    font-family: "Pacifico", cursive;
+    font-weight: bolder;
+    font-style: normal;
+  }
+
+  .blind-simon-says {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    @apply text-emerald-500;
   }
 }
