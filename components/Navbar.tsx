@@ -35,7 +35,7 @@ const Navigation = () => {
       <ul className='flex'>
         {links.map((link) => (
               <li key={link.path}>
-                <Link href={link.path} className={`${isActive(link.path) ? 'text-white' : 'text-neutral-400'} hover:text-white pr-4 duration-300`}>
+                <Link href={link.path} className={`${isActive(link.path) ? 'text-white' : 'text-neutral-400'} nav__list-item hover:text-white pr-4 duration-300`}>
                   {link.name}
                 </Link>
               </li>

@@ -12,7 +12,7 @@
     @apply leading-7;
   }
 
-  a:not(.blind-simon-says, .portfolio) {
+  a:not(.blind-simon-says, .portfolio, .nav__list-item) {
     @apply text-neutral-400;
     @apply hover:text-white;
     @apply transition-all;
