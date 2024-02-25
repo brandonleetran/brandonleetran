@@ -56,7 +56,7 @@ export default async function Page() {
         </div>
       </div> 
       <Link href='/blog' className='text-neutral-400 text-sm transition-all hover:text-white'>Read all posts <FontAwesomeIcon icon={faArrowRight}/></Link>
-      <h2 className='font-bold text-2xl my-5'>Highlighted Work</h2>
+      <h2 className='font-bold text-2xl my-5'>Highlights</h2>
       <div className='flex w-full gap-5 flex-col md:flex-row'>
         <div className='flex justify-center bg-neutral-800 px-5 py-3 border border-neutral-600 rounded items-center'>
             <a href='https://brandonleetran-resume.vercel.app' className='portfolio' target='_blank'>
