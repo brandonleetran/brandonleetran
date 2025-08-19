@@ -24,10 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Brandon Lee Tran - Software Engineer</title>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="max-w-[35rem] px-6 mx-auto py-10">{children}</main>
       </body>
     </html>
   );
