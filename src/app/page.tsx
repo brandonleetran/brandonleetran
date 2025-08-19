@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const STATUS_DATE: string = "2025-08-18:00:00:00" as const;
 const MESSAGES: string[] = [
@@ -36,18 +38,18 @@ export default function Home() {
     <>
       <header className="mb-10">
         <figure className="flex items-center gap-4 mb-4">
-          <a
+          <Link
             href="/"
             className="flex justify-center items-center p-[2px] w-[100px] h-[100px] hover:bg-[#1a1a1a] bg-gradient-to-r from-blue-400 via-indigo-600 to-gray-400 rounded-full"
           >
             <div className="bg-[#1a1a1a] w-full h-full p-[2px] rounded-full flex items-center justify-center">
-              <img
+              <Image
                 src="/brandonleetran-ai.jpeg"
                 className="w-full h-full rounded-full"
                 alt="Brandon Lee Tran"
               />
             </div>
-          </a>
+          </Link>
           <figcaption className="flex flex-col gap-1 text-white">
             <h1 className="text-sm">Brandon Lee Tran</h1>
             <span className="text-sm">
@@ -71,12 +73,12 @@ export default function Home() {
       <section className="mb-10">
         <h2 className="font-mono font-light text-xs mb-4">About</h2>
         <p className="text-sm leading-6 mb-2">
-          Hi, I'm Brandon — a frontend engineer at Gallup based in Omaha. I
+          Hi, I&apos;m Brandon — a frontend engineer at Gallup based in Omaha. I
           build user interfaces that are performant and accessible.
         </p>
         <p className="text-sm leading-6 mb-2">
-          When I'm not coding, I enjoy lifting, traveling, and playing video
-          games.
+          When I&apos;m not coding, I enjoy lifting, traveling, and playing
+          video games.
         </p>
         <p className="text-sm leading-6">
           CV and latest portfolio of work available upon request.
@@ -86,13 +88,13 @@ export default function Home() {
         <h2 className="font-mono font-light text-xs mb-4">Featured Work</h2>
         <ul className="flex flex-col gap-4 text-sm text-white">
           <li className="flex items-center gap-4">
-            <img
+            <Image
               alt="Gallup.com / Gallup News"
               src="/gallup-logo.png"
               className="rounded-md"
               width="48"
               height="48"
-            ></img>
+            ></Image>
             <a
               href="https://www.gallup.com/"
               target="_blank"
@@ -106,13 +108,13 @@ export default function Home() {
             </a>
           </li>
           <li className="flex items-center gap-4">
-            <img
+            <Image
               alt="West Health - Gallup"
               src="/gallup-logo.png"
               className="rounded-md"
               width="48"
               height="48"
-            ></img>
+            ></Image>
             <a
               href="https://www.westhealth.gallup.com/"
               target="_blank"
@@ -134,7 +136,8 @@ export default function Home() {
             <div className="flex flex-col gap-10">
               <figure className="flex flex-col gap-2">
                 <div className="bg-gradient-to-r from-orange-500 to-pink-600 rounded-md">
-                  <img
+                  <Image
+                    alt="Seattle"
                     src="/featured-seattle.jpeg"
                     className="aspect-square p-[2px] rounded-md"
                   />
@@ -148,7 +151,8 @@ export default function Home() {
             <div className="flex flex-col gap-10">
               <figure className="flex flex-col gap-2">
                 <div className="bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-md">
-                  <img
+                  <Image
+                    alt="Vietnam"
                     src="/featured-vietnam.jpeg"
                     className="aspect-square p-[2px] rounded-md"
                   />
@@ -162,7 +166,8 @@ export default function Home() {
             <div className="flex flex-col gap-">
               <figure className="flex flex-col gap-2">
                 <div className="bg-gradient-to-r from-purple-500 to-indigo-700 rounded-md">
-                  <img
+                  <Image
+                    alt="Chicago"
                     src="/featured-chicago.jpeg"
                     className="aspect-square p-[2px] rounded-md"
                   />
@@ -218,7 +223,7 @@ export default function Home() {
       <section className="mb-10">
         <h2 className="font-mono font-light text-xs mb-4">Last Played</h2>
         <figure className="flex items-center gap-4">
-          <img
+          <Image
             src="/song-placeholder.jpg"
             className="w-16 h-16 rounded-md"
             alt="Song Placeholder"
