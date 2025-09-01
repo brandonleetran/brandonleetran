@@ -47,6 +47,8 @@ export default function Home() {
                 src="/brandonleetran-ai.jpeg"
                 className="w-full h-full rounded-full"
                 alt="Brandon Lee Tran"
+                width={96}
+                height={96}
               />
             </div>
           </Link>
@@ -140,6 +142,8 @@ export default function Home() {
                     alt="Seattle"
                     src="/featured-seattle.jpeg"
                     className="aspect-square p-[2px] rounded-md"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <time className="uppercase text-sm">2025</time>
@@ -155,6 +159,8 @@ export default function Home() {
                     alt="Vietnam"
                     src="/featured-vietnam.jpeg"
                     className="aspect-square p-[2px] rounded-md"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <time className="uppercase text-sm">2024</time>
@@ -170,6 +176,8 @@ export default function Home() {
                     alt="Chicago"
                     src="/featured-chicago.jpeg"
                     className="aspect-square p-[2px] rounded-md"
+                    width={160}
+                    height={160}
                   />
                 </div>
                 <time className="uppercase text-sm">2023</time>
@@ -227,6 +235,8 @@ export default function Home() {
             src="/song-placeholder.jpg"
             className="w-16 h-16 rounded-md"
             alt="Song Placeholder"
+            width={128}
+            height={128}
           />
           <figcaption className="flex flex-col gap-1">
             <h3 className="text-sm">Take Care</h3>
