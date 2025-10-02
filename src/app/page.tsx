@@ -129,6 +129,26 @@ export default function Home() {
               </p>
             </a>
           </li>
+          <li className="flex items-center gap-4">
+            <Image
+              alt="Gallup Store"
+              src="/gallup-logo.png"
+              className="rounded-md"
+              width="48"
+              height="48"
+            ></Image>
+            <a
+              href="https://store.gallup.com/"
+              target="_blank"
+              aria-label="Gallup Store"
+              rel="noopener noreferrer"
+            >
+              <h3>Gallup Store</h3>
+              <p className="text-xs text-white">
+                Discover what makes you unique.
+              </p>
+            </a>
+          </li>
         </ul>
       </section>
       <section className="mb-10">
