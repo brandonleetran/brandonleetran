@@ -212,8 +212,13 @@ export default function Home() {
         <ul>
           <li className="flex flex-col">
             <article className="bg-neutral-800 p-4 rounded-lg flex items-center justify-between gap-1">
-              <header>
-                <p className="text-sm text-white">TBA</p>
+              <header className="flex flex-col gap-1">
+                <a
+                  href="#"
+                  className="hover:underline underline-offset-2 transition-all duration-300 text-sm text-white"
+                >
+                  First SFX Mininalistic White PC Build
+                </a>
                 <time className="text-xs">2025-08-16</time>
               </header>
               <span className="text-xs font-mono font-light">1,234 views</span>
@@ -221,8 +226,13 @@ export default function Home() {
           </li>
           <li className="flex flex-col">
             <article className="p-4 rounded-lg flex items-center justify-between gap-1">
-              <header>
-                <p className="text-sm text-white">TBA</p>
+              <header className="flex flex-col gap-1">
+                <a
+                  href="#"
+                  className="hover:underline underline-offset-2 transition-all duration-300 text-sm text-white"
+                >
+                  Using D3.js for Interactive Charts and Maps
+                </a>
                 <time className="text-xs">2025-08-16</time>
               </header>
               <span className="text-xs font-mono font-light">1,234 views</span>
@@ -230,8 +240,13 @@ export default function Home() {
           </li>
           <li className="flex flex-col">
             <article className="bg-neutral-800 p-4 rounded-lg flex items-center justify-between gap-1">
-              <header>
-                <p className="text-sm text-white">TBA</p>
+              <header className="flex flex-col gap-1">
+                <a
+                  href="#"
+                  className="hover:underline underline-offset-2 transition-all duration-300 text-sm text-white"
+                >
+                  Removing Preflight Styles in Tailwind v4
+                </a>
                 <time className="text-xs">2025-08-16</time>
               </header>
               <span className="text-xs font-mono font-light">1,234 views</span>
@@ -239,14 +254,38 @@ export default function Home() {
           </li>
           <li className="flex flex-col">
             <article className="p-4 rounded-lg flex items-center justify-between gap-1">
-              <header>
-                <p className="text-sm text-white">TBA</p>
+              <header className="flex flex-col gap-1">
+                <a
+                  href="#"
+                  className="hover:underline underline-offset-2 transition-all duration-300 text-sm text-white"
+                >
+                  Hello World
+                </a>
                 <time className="text-xs">2025-08-16</time>
               </header>
               <span className="text-xs font-mono font-light">1,234 views</span>
             </article>
           </li>
         </ul>
+      </section>
+      <section className="mb-10">
+        <h2 className="font-mono font-light text-xs mb-4">Contact</h2>
+        <p className="text-sm">
+          You can reach out to me at{" "}
+          <a
+            href="mailto:brandonleetran@icloud.com"
+            className="p-1 bg-neutral-800 font-mono font-light rounded-sm text-xs border border-neutral-500"
+          >
+            brandonleetran@icloud.com
+          </a>
+          , or you can find me on{" "}
+          <a
+            href="https://linkedin.com/in/brandon-lee-tran"
+            className="hover:underline underline-offset-2 transition-all duration-300"
+          >
+            LinkedIn.
+          </a>
+        </p>
       </section>
       <section className="mb-10">
         <h2 className="font-mono font-light text-xs mb-4">Last Played</h2>
